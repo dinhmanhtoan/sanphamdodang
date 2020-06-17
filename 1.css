@@ -1,0 +1,764 @@
+                        * {
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        .slider_head {
+                            padding: 0;
+                            margin: 0;
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                        
+                        .slider_head li {
+                            display: none;
+                            padding: 8px 0;
+                            transition: 300ms all;
+                        }
+                        
+                        .slider_head li.active {
+                            display: block;
+                        }
+                        
+                        .slider_head li .icon,
+                        .slider_head li .text {
+                            display: inline-block;
+                            background: initial;
+                        }
+                        
+                        .slider_head li .text .text1 {
+                            font-size: 1.4rem;
+                            font-weight: 900;
+                        }
+                        
+                        .slider_head li .text .text2 {
+                            font-size: 1.0rem;
+                            font-weight: 600;
+                        }
+                        
+                        .transition {
+                            display: flex;
+                            height: 48px;
+                            position: relative;
+                        }
+                        
+                        .transition div h2 {
+                            font-weight: 100;
+                            margin-left: 15px;
+                        }
+                        
+                        .transition div i {
+                            font-size: 30px;
+                            align-self: center;
+                            margin-right: 15px;
+                        }
+                        
+                        .counter {
+                            display: flex;
+                            align-self: center;
+                        }
+                        
+                        .counter span {
+                            font-size: 30px;
+                            color: aliceblue;
+                            margin-right: 20px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
+                        
+                        .counter em {
+                            font-size: 30px;
+                            color: black;
+                            margin-right: 20px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
+                        
+                        .bg-gray {
+                            background: #f7f8fa;
+                        }
+                        
+                        .model {
+                            display: flex;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        
+                        .model .active {
+                            background: #fff;
+                        }
+                        
+                        .model li {
+                            list-style: none;
+                            display: flex;
+                            height: 70px;
+                            width: 100px;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        
+                        .model li a {
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: #999999;
+                            text-decoration: none;
+                        }
+                        
+                        .icon {
+                            background-color: #f7f8fa;
+                        }
+                        
+                        .icon-text {
+                            font-size: 14px;
+                            align-self: center;
+                            text-align: center;
+                        }
+                        
+                        .home {
+                            background-color: #f7f8fa;
+                            display: flex;
+                        }
+                        
+                        .home h1 {
+                            text-align: center;
+                            align-self: center;
+                        }
+                        
+                        .icon-text span {
+                            color: red;
+                        }
+                        
+                        .icon {
+                            display: flex;
+                            /* align-self: center; */
+                        }
+                        
+                        .icon-icon {
+                            align-self: center;
+                            text-align: end;
+                        }
+                        
+                        .icon-icon i {
+                            padding: 10px;
+                        }
+                        
+                        .nam {
+                            position: relative;
+                        }
+                        
+                        .model-list {
+                            display: none;
+                        }
+                        
+                        .model-list.active {
+                            display: block;
+                        }
+                        
+                        .model-list a {
+                            color: black;
+                        }
+                        
+                        .model-list a:hover {
+                            color: black;
+                            text-decoration: none;
+                        }
+                        
+                        .model-list a span {
+                            padding: 20px;
+                            display: inline-block;
+                            font-weight: 500;
+                            color: #666;
+                            font-size: 14px;
+                        }
+                        
+                        .search {
+                            text-align: end;
+                            padding: 10px;
+                        }
+                        
+                        .search input {
+                            height: 30px;
+                            min-width: 0%;
+                            max-width: 75%;
+                        }
+                        
+                        .search i {
+                            color: white;
+                            background-color: black;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            margin-left: -5px;
+                        }
+                        
+                        .list {
+                            list-style-type: none;
+                            width: 80%;
+                            height: 50px;
+                            display: flex;
+                            margin-top: 70px;
+                            margin-left: 25px;
+                        }
+                        
+                        .list li {
+                            padding: 0 10px 0 10px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+                        }
+                        
+                        .home-list {
+                            border-bottom: 1px solid #999999;
+                            text-align: center;
+                        }
+                        
+                        .home-list a {
+                            color: black;
+                            color: 14px;
+                            color: #999999;
+                        }
+                        
+                        .home-list span {
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                        
+                        .home-list a:hover {
+                            color: black;
+                            text-decoration: none;
+                        }
+                        
+                        .category ul {
+                            display: block;
+                            margin-top: 10px;
+                        }
+                        
+                        .category ul li {
+                            list-style-type: none;
+                            position: relative;
+                            font-weight: 100;
+                        }
+                        
+                        .category ul li a {
+                            list-style-type: none;
+                            color: black;
+                        }
+                        
+                        .category ul li a input {
+                            cursor: pointer;
+                        }
+                        
+                        .category ul li a:hover {
+                            text-decoration: none;
+                        }
+                        
+                        .category ul li i {
+                            position: absolute;
+                            top: 5px;
+                            right: 0px;
+                            cursor: pointer;
+                        }
+                        
+                        #circle {
+                            position: initial;
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                        
+                        #plus {
+                            font-weight: 100;
+                            color: #999999;
+                        }
+                        
+                        .banner {
+                            background-color: #edf0f3;
+                            width: 100%;
+                            padding: 12px;
+                        }
+                        
+                        .banner>div {
+                            width: 50%;
+                            padding: 24px 20px;
+                            background-color: #fff;
+                        }
+                        
+                        .product-title {
+                            margin: 20px 0px 20px 0px;
+                        }
+                        
+                        .product-title span:first-child {
+                            font-size: 25px;
+                            font-weight: 500;
+                            padding: 5px;
+                        }
+                        
+                        .product-title span:last-child {
+                            font-size: 14px;
+                            color: #999999;
+                            padding: 5px;
+                        }
+                        
+                        .product-list {
+                            margin: 20px 0px 20px 0px;
+                        }
+                        
+                        .product-list span {
+                            border: 1px solid #999999;
+                            margin: 0 5px 0 5px;
+                            color: #777777;
+                            padding: 5px;
+                            font-size: 14px;
+                        }
+                        
+                        .product-list span:hover {
+                            border: 1px solid black;
+                            cursor: pointer;
+                        }
+                        
+                        .sort {
+                            text-align: end;
+                        }
+                        
+                        .sort span {
+                            font-size: 14px;
+                            color: #999999;
+                            padding: 5px;
+                        }
+                        
+                        .product-img {
+                            width: 100%;
+                            padding: 50px;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        
+                        .product-img div img {
+                            width: 100%;
+                        }
+                        
+                        .product-img .clothes {
+                            flex: 0 0 20%;
+                            max-width: 20%;
+                            position: relative;
+                            padding: 10px;
+                        }
+                        
+                        .product-img .clothes .add-cart {
+                            position: absolute;
+                            background-color: rgba(255, 255, 255, .85);
+                            border-color: rgba(255, 255, 255, .85);
+                            color: rgba(34, 34, 34, .85);
+                            top: 50%;
+                            left: 17%;
+                            padding: 5px 20px 5px 20px;
+                            font-size: 20px;
+                            cursor: pointer;
+                        }
+                        
+                        .product-img .clothes .add-cart:hover {
+                            background-color: #fff;
+                        }
+                        
+                        .product-img .clothes .information {
+                            color: #999999;
+                            cursor: pointer;
+                            height: 24px;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: block;
+                        }
+                        
+                        .product-img .clothes .information a {
+                            color: #999;
+                        }
+                        
+                        .product-img .clothes .information a:hover {
+                            text-decoration: underline;
+                            color: #222;
+                        }
+                        
+                        .price {
+                            font-weight: 500;
+                        }
+                        
+                        .clothes div i {
+                            margin-left: 67%;
+                            font-size: 17px;
+                            cursor: pointer;
+                        }
+                        
+                        .clothes div i:hover {
+                            font-size: 20px;
+                        }
+                        
+                        .clothes:hover .add-cart {
+                            display: block !important;
+                        }
+                        
+                        .scroll-bar {
+                            /* position: fixed; */
+                            overflow-y: scroll;
+                            width: 317.166666667px;
+                            padding-left: 15px;
+                            padding-right: 25px;
+                            top: 120px;
+                        }
+                        
+                        .scroll-bar::-webkit-scrollbar {
+                            width: 10px;
+                            background-color: #F5F5F5;
+                        }
+                        
+                        .scroll-bar::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            background: linear-gradient(left, #96A6BF, #63738C);
+                            box-shadow: inset 0 0 1px 1px #5C6670;
+                        }
+                        
+                        .scroll-bar::-webkit-scrollbar-track {
+                            border-radius: 10px;
+                            background: #eeeeee;
+                        }
+                        /*     
+    .scroll-bar {
+        visibility: hidden;
+        width: 317.166666667px;
+        padding-left: 15px;
+        padding-right: 25px;
+        right: auto;
+        left: 0;
+        -webkit-transform: translate(35px, 177px);
+        transform: translate(35px, 177px);
+        overflow-y: auto;
+       
+        top: 0;
+        z-index: 1;
+        will-change: transform;
+        background: #fff;
+    } */
+                        
+                        .size i {
+                            float: right;
+                        }
+                        
+                        .square {
+                            border: 1px solid #9999;
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                        }
+                        
+                        .attr-item {
+                            width: 50%;
+                            display: block;
+                            float: left;
+                        }
+                        
+                        .attr-item span {
+                            color: #999999;
+                        }
+                        /* xem thêm nhiều hơn */
+                        
+                        .more {
+                            width: 100%;
+                            text-align: center;
+                            color: black;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                        
+                        .more i {
+                            color: black;
+                            font-weight: bold;
+                            font-size: 14px;
+                        }
+                        
+                        .color {
+                            width: 20%;
+                            float: left;
+                        }
+                        
+                        .color a {
+                            position: relative;
+                        }
+                        
+                        .color a img {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        
+                        .color a span {
+                            background: #fff;
+                            color: black;
+                            border: 1px solid #eee7e7;
+                            position: absolute;
+                            display: none;
+                            padding: 2px 4px 2px 4px;
+                            left: 20px;
+                            top: 15px;
+                            white-space: nowrap;
+                            z-index: 999;
+                        }
+                        
+                        .color a:hover span {
+                            display: block !important;
+                        }
+                        
+                        .tr1 {
+                            display: flex;
+                        }
+                        
+                        .size {
+                            font-weight: 700;
+                        }
+                        
+                        .long-price {
+                            height: 2px;
+                            background-color: black;
+                            width: 100%;
+                        }
+                        
+                        .range {
+                            margin: 20px 0 20px 0;
+                        }
+                        
+                        .renge-prince {
+                            margin: 20px 0 20px 0;
+                        }
+                        
+                        .select-img {
+                            width: 100%;
+                            background-size: cover;
+                        }
+                        
+                        .select-img img {
+                            width: 100%;
+                        }
+                        
+                        .dropdown:hover .dropdown-menu {
+                            display: block;
+                            min-width: 8rem;
+                        }
+                        
+                        .dropdown-menu {}
+                        
+                        .icon-hover {
+                            position: relative;
+                            list-style-type: none;
+                            display: inline-block;
+                        }
+                        
+                        .icon-hover a {
+                            color: black;
+                        }
+                        
+                        .icon-hover a :hover {
+                            color: black;
+                            text-decoration: underline;
+                        }
+                        
+                        .user li {
+                            list-style-type: none;
+                            cursor: pointer;
+                        }
+                        
+                        .user {
+                            position: absolute;
+                            background-color: white;
+                            color: #96A6BF;
+                            width: 200px;
+                            display: none;
+                            top: 10;
+                            right: 0;
+                            z-index: 111;
+                        }
+                        
+                        .icon-hover:hover ul {
+                            display: block;
+                        }
+                        
+                        .user li:hover {
+                            color: black;
+                        }
+                        
+                        .user li:first-child {
+                            font-weight: 500;
+                        }
+                        
+                        .shop li img {
+                            width: 100px;
+                            height: 100px;
+                        }
+                        
+                        .shop li {
+                            text-align: center;
+                        }
+                        
+                        .shop {
+                            width: 400px;
+                            position: absolute;
+                            background-color: white;
+                            color: #96A6BF;
+                            display: none;
+                            top: 10;
+                            right: 0;
+                            z-index: 111;
+                            list-style-type: none;
+                        }
+                        
+                        .headphone {
+                            width: 200px;
+                            position: absolute;
+                            background-color: white;
+                            color: #96A6BF;
+                            display: none;
+                            top: 10;
+                            right: 0;
+                            z-index: 111;
+                            list-style-type: none;
+                        }
+                        
+                        .headphone li {
+                            text-align: start;
+                        }
+                        
+                        .globe {
+                            width: 200px;
+                            position: absolute;
+                            background-color: white;
+                            color: #96A6BF;
+                            display: none;
+                            top: 10;
+                            right: 0;
+                            z-index: 111;
+                            list-style-type: none;
+                            padding: 20px;
+                        }
+                        
+                        .globe li {
+                            margin: 10px 0 10px 0;
+                            text-align: start;
+                        }
+                        
+                        .con {
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 25px;
+                            margin-bottom: 12px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            line-height: 15px;
+                        }
+                        /* Hide the browser's default checkbox */
+                        
+                        .con input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+                        /* Create a custom checkbox */
+                        
+                        .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 15px;
+                            width: 15px;
+                            background-color: #eee;
+                        }
+                        /* On mouse-over, add a grey background color */
+                        
+                        .con:hover input~.checkmark {
+                            background-color: #ccc;
+                        }
+                        /* When the checkbox is checked, add a blue background */
+                        
+                        .con input:checked~.checkmark {
+                            background-color: #2196F3;
+                        }
+                        /* Create the checkmark/indicator (hidden when not checked) */
+                        
+                        .checkmark:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+                        /* Show the checkmark when checked */
+                        
+                        .con input:checked~.checkmark:after {
+                            display: block;
+                        }
+                        /* Style the checkmark/indicator */
+                        
+                        .con .checkmark:after {
+                            left: 6px;
+                            top: 2px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+                        
+                        .active-label::before {
+                            content: "";
+                            position: absolute;
+                            width: 15px;
+                            height: 15px;
+                            top: 0;
+                            right: 0;
+                            background-image: url(./anh/bg.png);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+                        
+                        .product-label {
+                            position: relative;
+                        }
+                        /* slider range */
+                        
+                        .range {
+                            width: 100%;
+                        }
+                        
+                        .slider {
+                            -webkit-appearance: none;
+                            width: 100%;
+                            height: 25px;
+                            background: #d3d3d3;
+                            outline: none;
+                            opacity: 0.7;
+                            -webkit-transition: .2s;
+                            transition: opacity .2s;
+                        }
+                        
+                        .slider:hover {
+                            opacity: 1;
+                        }
+                        
+                        .slider::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            appearance: none;
+                            width: 25px;
+                            height: 25px;
+                            background: #4CAF50;
+                            cursor: pointer;
+                        }
+                        
+                        .slider::-moz-range-thumb {
+                            width: 25px;
+                            height: 25px;
+                            background: #4CAF50;
+                            cursor: pointer;
+                        }
